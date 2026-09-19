@@ -1,0 +1,35 @@
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.pyc
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+.vscode/
+
+# Private data and runtime artifacts.
+data/
+results/
+cache/
+*.db
+*.sqlite*
+*.pkl
+*.log
+*.zip
+
+# Excluded from the core release.
+aflow/
+baselines/
+autogen/
+analysis/
+scripts_bench/
+experiments/
+/tests/*
+!/tests/test_core_release.py
+iclr2027*/
+/*.md
+!/README.md
+!/CORE_FILES.md

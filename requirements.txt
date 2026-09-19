@@ -1,0 +1,21 @@
+# IF-MAP; Python 3.10+.
+openai>=1.0
+anthropic>=0.40
+requests>=2.31
+sentence-transformers>=2.2     # Optional SBERT backend.
+scikit-learn>=1.3
+scipy>=1.10
+numpy>=1.24
+pandas>=2.0
+pyarrow>=14.0
+pyyaml>=6.0
+rich>=13.0
+tqdm>=4.65
+httpx[socks]                   # SOCKS support.
+socksio
+
+# External AFlow runtime support.
+aiofiles>=23.0
+tenacity>=8.2
+regex>=2023.0
+sympy>=1.12

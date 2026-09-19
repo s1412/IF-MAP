@@ -1,0 +1,25 @@
+# Who&When HC: orchestrator-worker template; prompts come from each trace.
+
+topology_type: hierarchical
+
+agent_names:
+  - Orchestrator
+  - WebSurfer
+  - FileSurfer
+  - Coder
+
+# Edges: [source, target].
+edges:
+  - [Orchestrator, WebSurfer]
+  - [Orchestrator, FileSurfer]
+  - [Orchestrator, Coder]
+  - [WebSurfer, Orchestrator]
+  - [FileSurfer, Orchestrator]
+  - [Coder, Orchestrator]
+
+entry_agent: Orchestrator
+exit_agent: Orchestrator
+
+extra:
+  max_rounds: 20
+  termination_keyword: "FINAL_ANSWER"

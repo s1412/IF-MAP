@@ -1,0 +1,23 @@
+# Who&When AG: manager-expert template; agents come from each trace.
+
+topology_type: hierarchical
+
+agent_names:
+  - Manager
+  - Expert_1
+  - Expert_2
+  - Expert_3
+
+edges:
+  - [Manager, Expert_1]
+  - [Manager, Expert_2]
+  - [Manager, Expert_3]
+  - [Expert_1, Manager]
+  - [Expert_2, Manager]
+  - [Expert_3, Manager]
+
+entry_agent: Manager
+exit_agent: Manager
+
+extra:
+  max_rounds: 10
